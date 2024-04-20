@@ -1,0 +1,145 @@
+.navbar{
+    position:sticky;
+    top: 0;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: white;
+
+}
+.navbar .logo{
+    color: tomato ;
+    max-width: fit-content;
+    margin-left: 10px;
+}
+.navbar-menu{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    color: #49557e;
+    font-size: 18px;
+}
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.navbar button{
+    background: transparent;
+    font-size: 16px;
+    color: #49557e;
+    border: 1px solid tomato;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-right: 10px;
+}
+.navbar button:hover{
+    background-color: #fff4f2;
+    margin-right: 5px;
+}
+.navbar .active{
+    padding-bottom: 2px;
+}
+
+.navbar-menu Link, a:hover{
+    padding-bottom: 4px;
+}
+
+.navbar li{
+    cursor: pointer;
+}
+.navbar-search-icon{
+    position: relative;
+}
+.navbar-search-icon .dot{
+    position: absolute;
+    min-width: 7px;
+    min-height: 7px;
+    background-color: tomato;
+    border-radius: 5px;
+    top: 7px;
+    right: 7px;
+}
+.navbar-search-icon img{
+    width: 50px;
+}
+@media (max-width:1050px){
+    .navbar .logo{
+        max-width: fit-content;
+    }
+    .navbar-menu{
+        gap: 20px;
+        font-size: 17px;
+    }
+    .navbar-right{
+        gap: 30px;
+    }
+    .navbar-right img{
+        width: 22px;
+    }
+    .navbar-right button{
+        padding: 8px 25px;
+    }
+    .navbar-search-icon .dot{
+        position: absolute;
+        min-width: 5px;
+        min-height: 5px;
+        background-color: tomato;
+        border-radius: 5px;
+        top: 7px;
+        right: 5px;
+    }
+    .navbar-search-icon img{
+        width: 40px;
+    }
+
+}
+@media (max-width:900px){
+    .navbar .logo{
+        max-width: fit-content;
+    }
+    .navbar-menu{
+        gap: 15px;
+        font-size: 16px;
+    }
+    .navbar-right{
+        gap: 20px;
+    }
+    .navbar-right img{
+        width: 20px;
+    }
+    .navbar-right button{
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+    .navbar-search-icon .dot{
+        position: absolute;
+        min-width: 5px;
+        min-height: 5px;
+        background-color: tomato;
+        border-radius: 5px;
+        top: 7px;
+        right: 5px;
+    }
+    .navbar-search-icon img{
+        width: 40px;
+    }
+}
+@media (max-width:750px){
+    .navbar-menu{
+      display: none;
+    }
+    .navbar .logo{
+        max-width: fit-content;
+    }
+    .navbar-right{
+        margin-left: 10px;
+    }
+    .navbar-right .search{
+        display: none;
+    }
+}

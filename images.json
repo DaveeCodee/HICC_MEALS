@@ -1,0 +1,14 @@
+[
+    {
+        "id":1,
+        "name": "food_1.PNG",
+        "path": "assets/food_1.PNG",
+        "alt": "food_1 image"
+    },
+    {
+        "id":2,
+        "name": "food_2.PNG",
+        "path": "assets/food_2.PNG",
+        "alt": "food_2 image"
+    }
+]
